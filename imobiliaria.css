@@ -3,6 +3,9 @@
     padding: 0;
     list-style: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 
@@ -79,7 +82,7 @@ header {
 /* ESTOU MEXENDO NAS CAIXAS/DIV */
 .caixa-papelao02 div {
     width: 350px;
-    height: 400px;
+    height: 450px;
     background-color: white;
 }
 
@@ -108,6 +111,21 @@ header {
     color: white;
 
 }
+.caixa-01
+{
+    background-image: url(imagens/casa-div1.png);
+}
+.caixa-02
+{
+    background-image: url(imagens/casa-02.jpg);
+    
+    
+}
+.caixa-03
+{
+    background-image: url(imagens/casa-div3.jpg);
+}
+
 .imagem {
     background-color: #0a6006;
     padding: 160px;
@@ -152,6 +170,13 @@ header {
 .maps p {
     color: white;
     font-size: 40px;
+    font-family: "Playwrite HU", cursive;
+}
+
+.maps span
+{
+    color: yellow;
+    font-size: 45px;
     font-family: "Playwrite HU", cursive;
 }
 
