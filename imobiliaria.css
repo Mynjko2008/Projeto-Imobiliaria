@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+header {
+    background-color: #004000;
+    padding: 40px;
+    /* tamanho/preenchimento do cabeçalho*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-h1 h1 {
+    color: white;
+    font-family: "Playwrite HU", cursive;
+    font-size: 50px;
+}
+
+.div-image img {
+    width: 120px;
+    height: 120px;
+}
+
+.list-menu ul {
+    /*Alteração na lista não ordenada (elemento pai)*/
+    display: flex;
+    /*tornando as ( li ) flex/lado a lado*/
+    justify-content: center;
+    /*Deixando elas centralizadas*/
+    gap: 20px;
+    /*Espaço entre as ( li )*/
+}
+
+.list-menu ul li {
+    /*Alteração da Lista (li) (elemento filho)*/
+    list-style: none;/*Removendo o estilo de lista aplicado por padrão*/
+}
+
+.list-menu ul li a {
+    text-decoration: none;/*remoção do sublinhado (Decoração de texto: Nenhuma)*/
+    color: white;
+}
+
+.button {
+    background-image: url(imagens/fachada-casa-de-campo.png);
+    padding: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    border-radius: 20px;
+    width: 180px;
+    color: white;
+    padding: 15px;
+    background-color: #065003af;
+    font-size: 30px;
+    font-family: "Playwrite HU", cursive;
+}
+
+
+/* PEGUEI A SESSÃO E DEI VIDA A ELA, COLOCANDO COR E PREENCHIMENTO */
+
+.section-div {
+    padding: 180px;
+    background-color: #055003;
+}
+
+/* ESTOU MEXENDO NAS CAIXAS/DIV */
+.caixa-papelao02 div {
+    width: 350px;
+    height: 400px;
+    background-color: white;
+}
+
+
+/* ESTOU POSICIONANDO AS MINHAS CAIXAS DENTRO DA SESSÃO  */
+.caixa-papelao02 
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.caixa-papelao01 
+{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.caixa-papelao01 h2 
+{
+    font-size: 40px;
+    font-family: "Playwrite HU", cursive;
+    color: white;
+
+}
+.imagem {
+    background-color: #0a6006;
+    padding: 160px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.imagem span {
+    color: yellow;
+    font-size: 45px;
+    font-family: "Playwrite HU", cursive;
+}
+
+.imagem div p {
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    font-family: "Playwrite HU", cursive;
+}
+
+.imagem div img {
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.maps {
+    padding: 160px;
+    background-color: #0f6f09;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+}
+
+.maps iframe {
+    border-radius: 20px;
+}
+
+.maps p {
+    color: white;
+    font-size: 40px;
+    font-family: "Playwrite HU", cursive;
+}
+
+footer {
+    background-color: #147f0c;
+    padding: 30px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    gap: 20px;
+}
+footer p 
+{
+    color: white;
+    font-size: 40px;
+    font-family: "Playwrite HU", cursive;
+}
+footer a  {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
