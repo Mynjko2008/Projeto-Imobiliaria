@@ -1,3 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+header {
+    background-color: #004000;
+    padding: 40px;
+    /* tamanho/preenchimento do cabeçalho*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div-h1 h1 {
+    color: white;
+    font-family: "Playwrite HU", cursive;
+    font-size: 50px;
+}
+
+.div-image img {
+    width: 120px;
+    height: 120px;
+}
+
+.list-menu ul {
+    /*Alteração na lista não ordenada (elemento pai)*/
+    display: flex;
+    /*tornando as ( li ) flex/lado a lado*/
+    justify-content: center;
+    /*Deixando elas centralizadas*/
+    gap: 20px;
+    /*Espaço entre as ( li )*/
+}
+
+.list-menu ul li {
+    /*Alteração da Lista (li) (elemento filho)*/
+    list-style: none;/*Removendo o estilo de lista aplicado por padrão*/
+}
+
+.list-menu ul li a {
+    text-decoration: none;/*remoção do sublinhado (Decoração de texto: Nenhuma)*/
+    color: white;
+}
+.casa 
+{
+    background: linear-gradient(to bottom, #00FF00, #008000);
+    height: 100vh; /* Para preencher a tela inteira */
+}
+
 .casa2 {
     width: 300px;
     height: 600px;
@@ -13,4 +68,30 @@
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+
+
+
+
+
+footer {
+    background-color: #147f0c;
+    padding: 30px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    gap: 20px;
+}
+footer p 
+{
+    color: white;
+    font-size: 40px;
+    font-family: "Playwrite HU", cursive;
+}
+footer a  {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
 }
