@@ -47,33 +47,159 @@ header {
     text-decoration: none;/*remoção do sublinhado (Decoração de texto: Nenhuma)*/
     color: white;
 }
+
+.button {
+    background-image: url(imagens/fachada-casa-de-campo.png);
+    padding: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    border-radius: 20px;
+    width: 180px;
+    color: white;
+    padding: 15px;
+    background-color: #065003af;
+    font-size: 30px;
+    font-family: "Playwrite HU", cursive;
+}
+
 .casa 
 {
-    background: linear-gradient(to bottom, #00FF00, #008000);
-    height: 100vh; /* Para preencher a tela inteira */
+    padding: 180px;
+    background-color: #055003;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.casa h2 
+{
+    font-size: 40px;
+    font-family: "Playwrite HU", cursive;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.casa1 
+{
+    width: 400px;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
+}
+.casa1 img {
+    width: 100%;
+    height: 50%;
+    
 }
 
 .casa2 {
-    width: 300px;
-    height: 600px;
+    width: 400px;
+    height: 700px;
     background-color: rgba(128, 128, 128, 0.603);
 }
-
 .casa2 img {
     width: 100%;
     height: 50%;
 }
 
+.casa3{
+    width: 400px;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+.casa3 img {
+    width: 100%;
+    height: 50%;
+}
+
+.casa4 {
+    width: 400px;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+.casa4 img {
+    width: 100%;
+    height: 50%;
+}
 .div-icon {
     display: flex;
     align-items: center;
     gap: 15px;
+    color: white;
 }
 
+.ap {
+    background-color: #0a6006;
+    padding: 180px;
+    
+}
 
+.ap h2 
+{
+    font-size: 40px;
+    font-family: "Playwrite HU", cursive;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.ap1{
+    width: 400px;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+.ap1 h2{
+    font-size: 30px;
+}
+.ap1 img {
+    width: 100%;
+    height: 50%;
+}
 
+.ap2 {
+    width: 400px;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+.ap2 img {
+    width: 100%;
+    height: 50%;
+}
+.ap2 h2{
+    font-size: 30px;
+}
+.ap3{
+    width: 400px;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+.ap3 img {
+    width: 100%;
+    height: 50%;
+}
+.ap3 h2{
+    font-size: 30px;
+}
+.ap4{
+    width: 400px;
+    height: 760px;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+.ap4 img {
+    width: 100%;
+    height: 50%;
+}
 
+.ap4 h2{
+    font-size: 30px;
+}
 
 footer {
     background-color: #147f0c;
@@ -89,9 +215,11 @@ footer p
     color: white;
     font-size: 40px;
     font-family: "Playwrite HU", cursive;
+    margin-bottom: 60px;
 }
 footer a  {
     font-size: 40px;
     color: white;
     text-decoration: none;
+    margin-bottom: 60px;
 }

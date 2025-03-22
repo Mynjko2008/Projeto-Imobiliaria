@@ -194,9 +194,11 @@ footer p
     color: white;
     font-size: 40px;
     font-family: "Playwrite HU", cursive;
+    margin-bottom: 60px;
 }
 footer a  {
     font-size: 40px;
     color: white;
     text-decoration: none;
+    margin-bottom: 60px;
 }
