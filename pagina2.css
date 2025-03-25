@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
-}
-html {
     scroll-behavior: smooth;
+    color: white;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 
 header {
@@ -48,6 +46,12 @@ header {
     color: white;
 }
 
+.list-menu ul li a:hover
+{
+    color: rgb(0, 140, 255);
+    transition: 0.8s;
+}
+
 .button {
     background-image: url(imagens/fachada-casa-de-campo.png);
     padding: 300px;
@@ -70,15 +74,33 @@ header {
     font-family: "Playwrite HU", cursive;
 }
 
+.button button:hover
+{
+    background-color: rgba(172, 255, 47, 0.596);
+    transition: 0.8s;
+}
+
 .casa 
 {
     padding: 180px;
     background-color: #055003;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: bottom;
     
 }
+.h2 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+}
 
+.casa1:hover, .casa2:hover, .casa3:hover, .casa4:hover
+{
+    box-shadow: 20px 20px 30px black;
+    transition: 0.8s;
+}
 .casa h2 
 {
     font-size: 40px;
@@ -93,6 +115,7 @@ header {
     height: 700px;
     background-color: rgba(128, 128, 128, 0.603);
     border-radius: 20px;
+    margin-bottom: 60px;
 }
 .casa1 img {
     width: 100%;
@@ -104,6 +127,9 @@ header {
     width: 400px;
     height: 700px;
     background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
+    margin-bottom: 60px;
+   
 }
 .casa2 img {
     width: 100%;
@@ -114,6 +140,8 @@ header {
     width: 400px;
     height: 700px;
     background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
+    
 }
 .casa3 img {
     width: 100%;
@@ -124,6 +152,7 @@ header {
     width: 400px;
     height: 700px;
     background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
 }
 .casa4 img {
     width: 100%;

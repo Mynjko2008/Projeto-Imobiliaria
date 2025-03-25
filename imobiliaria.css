@@ -48,6 +48,11 @@ header {
     text-decoration: none;/*remoção do sublinhado (Decoração de texto: Nenhuma)*/
     color: white;
 }
+.list-menu ul li a:hover
+{
+    color: rgb(0, 140, 255);
+    transition: 0.8s;
+}
 
 .button {
     background-image: url(imagens/fachada-casa-de-campo.png);
@@ -70,7 +75,11 @@ header {
     font-size: 30px;
     font-family: "Playwrite HU", cursive;
 }
-
+.button button:hover
+{
+    background-color: rgba(172, 255, 47, 0.596);
+    transition: 0.8s;
+}
 
 /* PEGUEI A SESSÃO E DEI VIDA A ELA, COLOCANDO COR E PREENCHIMENTO */
 
