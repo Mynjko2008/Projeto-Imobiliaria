@@ -168,6 +168,9 @@ header {
 .ap {
     background-color: #0a6006;
     padding: 180px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: bottom;
     
 }
 
@@ -178,11 +181,18 @@ header {
     text-align: center;
     margin-bottom: 30px;
 }
+.ap1:hover, .ap2:hover, .ap3:hover, .ap4:hover
+{
+    box-shadow: 20px 20px 30px black;
+    transition: 0.8s;
+}
 
 .ap1{
     width: 400px;
     height: 700px;
     background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 .ap1 h2{
     font-size: 30px;
@@ -196,6 +206,8 @@ header {
     width: 400px;
     height: 700px;
     background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 .ap2 img {
     width: 100%;
@@ -208,6 +220,7 @@ header {
     width: 400px;
     height: 700px;
     background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
 }
 .ap3 img {
     width: 100%;
@@ -220,6 +233,7 @@ header {
     width: 400px;
     height: 760px;
     background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
 }
 .ap4 img {
     width: 100%;

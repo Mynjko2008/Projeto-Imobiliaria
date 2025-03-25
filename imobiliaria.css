@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    color: white;
 }
 html {
     scroll-behavior: smooth;
@@ -49,6 +50,19 @@ header {
     color: white;
 }
 .list-menu ul li a:hover
+{
+    color: rgb(0, 140, 255);
+    transition: 0.8s;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    gap: 20px;
+}
+.fa-user:hover
 {
     color: rgb(0, 140, 255);
     transition: 0.8s;
@@ -123,16 +137,17 @@ header {
 .caixa-01
 {
     background-image: url(imagens/casa-div1.png);
+    box-shadow: 20px 20px 40px black;
 }
 .caixa-02
 {
     background-image: url(imagens/casa-02.jpg);
-    
-    
+    box-shadow: 20px 20px 40px black;
 }
 .caixa-03
 {
     background-image: url(imagens/casa-div3.jpg);
+    box-shadow: 20px 20px 40px black;
 }
 
 .imagem {
@@ -161,6 +176,7 @@ header {
     width: 600px;
     height: 600px;
     border-radius: 20px;
+    box-shadow: 20px 20px 40px black;
 }
 
 .maps {
@@ -174,6 +190,7 @@ header {
 
 .maps iframe {
     border-radius: 20px;
+    box-shadow: 20px 20px 40px black;
 }
 
 .maps p {
@@ -210,4 +227,9 @@ footer a  {
     color: white;
     text-decoration: none;
     margin-bottom: 60px;
+}
+footer p:hover
+{
+    color: rgb(0, 140, 255);
+    transition: 0.8s;
 }
