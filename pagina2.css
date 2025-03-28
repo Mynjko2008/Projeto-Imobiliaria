@@ -91,11 +91,14 @@ header {
 }
 .h2 
 {
-    display: flex;
-    justify-content: center;
-    flex-direction: center;
+    text-align: center;
+    margin-bottom: 100px;
 }
-
+.h2-1
+{
+    text-align: center;
+    margin-bottom: 200px;
+}
 .casa1:hover, .casa2:hover, .casa3:hover, .casa4:hover
 {
     box-shadow: 20px 20px 30px black;
