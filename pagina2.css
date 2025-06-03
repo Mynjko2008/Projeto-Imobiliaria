@@ -1,23 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Playwrite HU", cursive;
+}
+
+body {
     color: white;
 }
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 
 header {
     background-color: #004000;
     padding: 40px;
-    /* tamanho/preenchimento do cabeçalho*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
+
 .div-h1 h1 {
-    color: white;
-    font-family: "Playwrite HU", cursive;
     font-size: 50px;
 }
 
@@ -27,27 +32,16 @@ header {
 }
 
 .list-menu ul {
-    /*Alteração na lista não ordenada (elemento pai)*/
     display: flex;
-    /*tornando as ( li ) flex/lado a lado*/
-    justify-content: center;
-    /*Deixando elas centralizadas*/
     gap: 20px;
-    /*Espaço entre as ( li )*/
-}
-
-.list-menu ul li {
-    /*Alteração da Lista (li) (elemento filho)*/
-    list-style: none;/*Removendo o estilo de lista aplicado por padrão*/
 }
 
 .list-menu ul li a {
-    text-decoration: none;/*remoção do sublinhado (Decoração de texto: Nenhuma)*/
+    text-decoration: none;
     color: white;
 }
 
-.list-menu ul li a:hover
-{
+.list-menu ul li a:hover {
     color: rgb(0, 140, 255);
     transition: 0.8s;
 }
@@ -59,7 +53,6 @@ header {
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
-
     display: flex;
     justify-content: center;
 }
@@ -67,205 +60,96 @@ header {
 .button button {
     border-radius: 20px;
     width: 180px;
-    color: white;
     padding: 15px;
     background-color: #065003af;
     font-size: 30px;
-    font-family: "Playwrite HU", cursive;
+    color: white;
 }
 
-.button button:hover
-{
+.button button:hover {
     background-color: rgba(172, 255, 47, 0.596);
     transition: 0.8s;
 }
 
-.casa 
-{
-    padding: 180px;
+.casa, .ap {
+    padding: 80px 20px;
     background-color: #055003;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: bottom;
-    
 }
-.h2 
-{
+
+.h2, .h2-1 {
     text-align: center;
-    margin-bottom: 100px;
-}
-.h2-1
-{
-    text-align: center;
-    margin-bottom: 200px;
-}
-.casa1:hover, .casa2:hover, .casa3:hover, .casa4:hover
-{
-    box-shadow: 20px 20px 30px black;
-    transition: 0.8s;
-}
-.casa h2 
-{
-    font-size: 40px;
-    font-family: "Playwrite HU", cursive;
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
-.casa1 
-{
-    width: 400px;
-    height: 700px;
-    background-color: rgba(128, 128, 128, 0.603);
-    border-radius: 20px;
-    margin-bottom: 60px;
-}
-.casa1 img {
-    width: 100%;
-    height: 50%;
-    
+.imoveis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
-.casa2 {
-    width: 400px;
-    height: 700px;
+.imovel {
     background-color: rgba(128, 128, 128, 0.603);
     border-radius: 20px;
-    margin-bottom: 60px;
-   
-}
-.casa2 img {
-    width: 100%;
-    height: 50%;
+    overflow: hidden;
+    transition: box-shadow 0.8s;
 }
 
-.casa3{
-    width: 400px;
-    height: 700px;
-    background-color: rgba(128, 128, 128, 0.603);
-    border-radius: 20px;
-    
-}
-.casa3 img {
+.imovel img {
     width: 100%;
-    height: 50%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.casa4 {
-    width: 400px;
-    height: 700px;
-    background-color: rgba(128, 128, 128, 0.603);
-    border-radius: 20px;
+.imovel h2 {
+    font-size: 20px;
+    margin: 15px;
 }
-.casa4 img {
-    width: 100%;
-    height: 50%;
+
+.imovel p {
+    margin: 0 15px 15px;
 }
+
 .div-icon {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 15px;
-    color: white;
+    gap: 10px;
+    margin: 10px 15px 15px;
 }
 
-.ap {
-    background-color: #0a6006;
-    padding: 180px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: bottom;
-    
-}
-
-.ap h2 
-{
-    font-size: 40px;
-    font-family: "Playwrite HU", cursive;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.ap1:hover, .ap2:hover, .ap3:hover, .ap4:hover
-{
-    box-shadow: 20px 20px 30px black;
-    transition: 0.8s;
-}
-
-.ap1{
-    width: 400px;
-    height: 700px;
-    background-color: rgba(128, 128, 128, 0.603);
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-.ap1 h2{
-    font-size: 30px;
-}
-.ap1 img {
-    width: 100%;
-    height: 50%;
-}
-
-.ap2 {
-    width: 400px;
-    height: 700px;
-    background-color: rgba(128, 128, 128, 0.603);
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-.ap2 img {
-    width: 100%;
-    height: 50%;
-}
-.ap2 h2{
-    font-size: 30px;
-}
-.ap3{
-    width: 400px;
-    height: 700px;
-    background-color: rgba(128, 128, 128, 0.603);
-    border-radius: 20px;
-}
-.ap3 img {
-    width: 100%;
-    height: 50%;
-}
-.ap3 h2{
-    font-size: 30px;
-}
-.ap4{
-    width: 400px;
-    height: 760px;
-    background-color: rgba(128, 128, 128, 0.603);
-    border-radius: 20px;
-}
-.ap4 img {
-    width: 100%;
-    height: 50%;
-}
-
-.ap4 h2{
-    font-size: 30px;
+.imovel:hover {
+    box-shadow: 0 0 20px black;
 }
 
 footer {
-    background-color: #147f0c;
-    padding: 30px;
-    font-size: 40px;
-    color: white;
+    background-color: #004000;
     text-align: center;
-    line-height: 40px;
-    gap: 20px;
+    padding: 20px;
 }
-footer p 
-{
-    color: white;
-    font-size: 40px;
-    font-family: "Playwrite HU", cursive;
-    margin-bottom: 60px;
+
+footer div {
+    margin: 10px 0;
 }
-footer a  {
-    font-size: 40px;
+
+footer a {
     color: white;
-    text-decoration: none;
-    margin-bottom: 60px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .button {
+        padding: 150px;
+    }
+
+    .imoveis-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button button {
+        font-size: 20px;
+    }
 }
